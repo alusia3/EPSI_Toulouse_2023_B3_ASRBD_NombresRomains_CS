@@ -84,4 +84,17 @@ public class NombresRomainsTest
         // ALORS on obtient "VI"
         Assert.Equal("VI", nombreRomain);
     }
+
+    public void Test7()
+    {
+        // ETANT DONNE le chiffre 7
+        const uint chiffre = 7;
+
+        // QUAND on le convertit en nombres romains
+        var nombreRomain =
+            ConvertisseurNombresRomains.Convertir(chiffre);
+
+        // ALORS on obtient "VII"
+        Assert.Equal("VII", nombreRomain);
+    }
 }
